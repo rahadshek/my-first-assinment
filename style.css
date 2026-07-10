@@ -16,8 +16,9 @@ font-family: "Inter", sans-serif;
 
 /* stert navigation bar */
 .primary-nav ul{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 80px 80px 57px 53.3px 50px ;
+    /* justify-content: space-around; */
     align-items: center;
     gap: 30px;
     list-style: none;
@@ -67,16 +68,19 @@ color: rgb(208, 236, 201);
 
 /* start hero_contenar style */
 
+
 .banner_contenar{
-    background-image:url(assets/banner.jpg);
+     background-image:url(assets/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+     height: 100vh;
+     /* conatant */
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center; 
-    height: 100vh;  
-    margin-top: 20px;
+    text-align: center;
 }
 
 .banner_content{
@@ -84,4 +88,22 @@ color: rgb(208, 236, 201);
     text-align: center;
     padding-top:0;
     
+}
+.banner_content .banner_contenar h1{
+    font-weight:lighter ;
+    font-size: 100px;
+  margin-top: -200px;
+}
+
+.banner_contenar p{
+    margin-bottom: 200px;
+    font-weight: 600;
+    font-size: 24;
+}
+
+.banner_button button{
+    margin-bottom: -500px;
+    
+    padding:15px 20px;
+    margin-top: 200px;
 }
