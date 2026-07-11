@@ -179,40 +179,55 @@ font-weight:500;
 
 
 /* start Secure Your Spot style */
-.pricing_header{
-    width: 100%;
-    height: 100vh;
+.pricing_cards_prent {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* কার্ডগুলোর উচ্চতা সমান রাখতে flex-start ভালো */
+    gap: 20px;
+    margin: auto;
+    flex-wrap: wrap; /* স্ক্রিন ছোট হলে কার্ডগুলো নিচে নেমে যাবে */
 }
 
-.pricing_title{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 40px;
+/* Common Card */
+.common_card {
+    border: 3px solid #c8c6c6;
+    border-radius: 10px;
+    padding: 20px 25px; /* একটু কমানো হলো যাতে লেখাগুলো সুন্দর দেখায় */
+    width: 300px;
+    display: flex;
+    flex-direction: column; /* কার্ডের ভেতরের কন্টেন্ট সাজাতে সাহায্য করবে */
 }
-.pricing_title h2{
+
+.common_card p {
+    color: #888888;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.common_card h2 {
     color: #0D1B2A;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 44px;
+    margin: 10px 0;
 }
 
-.pricing_title p{
-     color: #575757;
-    font-weight: normal;
-    font-size: 15px;
+.common_card ul {
+    list-style: none; 
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
-/* start card style */
-.pricing_cards_prent{
-display: flex;
-justify-content: space-around;
-/* grid-template-columns: 1fr 1fr 1fr; */
-align-items: center;
+.common_card ul li {
+    color: #333333;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 0;
+}
 
-gap: 20px;
-margin:auto;
 
+.card-2 {
+    margin-top: auto; /* বাটনটিকে কার্ডের একদম নিচে ঠেলে দেবে */
+    text-align: center;
 }
 
 .common_card{
@@ -252,7 +267,7 @@ padding: 2px;
 
 
 /* FAQ Section Style */
-/* .faq-section {
+.faq-section {
     padding: 80px 20px;
     max-width: 1000px;
     margin: 50px auto;
@@ -290,4 +305,4 @@ padding: 2px;
 .faq-card p {
     color: #575757;
     line-height: 1.6;
-} */
+}
