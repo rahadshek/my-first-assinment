@@ -44,7 +44,7 @@ body{
 
 .primary-nav ul li a:hover{
     background-color: hsl(30, 11%, 96%);
-    color: #bd6f6f;
+    color: #0925db;
     margin: 5px 10px;
     padding: 3px 8px;
     border:1px solid #f1eeee;
@@ -189,32 +189,25 @@ font-weight:500;
 }
 
 
-/* Pricing Title সেকশন সেন্টার করার জন্য */
-.pricing {
-    text-align: center;
-    margin: 40px auto;
-}
-
-/* Pricing Parent Container */
 .pricing_cards_prent {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-start; 
     gap: 20px;
     margin: auto;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
-/* Common Card - সব প্রপার্টি এখানে থাকবে */
+/* Common Card */
 .common_card {
     border: 3px solid #c8c6c6;
     border-radius: 10px;
-    padding: 20px 30px;
-    width: 300px;
-    height: 450px; /* উচ্চতা বাড়ানো হয়েছে যাতে কন্টেন্ট ধরে */
+    padding: 20px 25px; 
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    flex-direction: column; 
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 3px 2px rgb(147, 146, 146);
 }
 
 .common_card p {
@@ -230,8 +223,8 @@ font-weight:500;
     margin: 10px 0;
 }
 
-.common_card ul {
-    list-style: none;
+.common_card .pro_card ul {
+    list-style: outside; 
     margin-top: 15px;
     margin-bottom: 20px;
 }
@@ -241,57 +234,87 @@ font-weight:500;
     font-weight: 500;
     font-size: 14px;
     padding: 5px 0;
-    display: flex;
-    align-items: center;
 }
 
-.common_card ul li::before {
-    content: "•";
+.common_card button{
     color: #2563EB;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-/* বাটন পজিশন ঠিক করার জন্য */
-.card-2 {
-    margin-top: auto;
-    text-align: center;
-}
-.common_card{
-    border: 3PX solid #c8c6c6;
-    border-radius: 10px;
-    padding: 20px 50px;
-    width:300px ;
-    height: 400px;
-    overflow: hidden;
+    border:2px solid #2563EB;
+    margin: auto;
+    padding:10px 60px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 19px;
+    background-color: white;
     
 }
 
-.common_card p{
-color: #888888;
-font-weight: 500;
-font-size: 13px;
-}
-.common_card h2{
-color: #0D1B2A;
-font-weight:bold;
-font-size: 44px;
-}
-.common_card ul li::before {
-    content: "•"; 
-    color: #2563EB; 
-    margin-right: 10px; 
-    font-size: 20px;
-    line-height: 1;
+.common_card button:hover{
+    background-color: #071de6;
+    color: white;
 }
 
- .card-2 {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+/* pro card style */
+.pro_card{
+    border: 3px solid #484747;
+    border-radius: 10px;
+    padding: 20px 25px; 
+    display: flex;
+    flex-direction: column; 
+    width: 300px;
+    height: 360px;
+    box-shadow: 2px 3px 2px rgb(149, 147, 147);
+    background-color: #0D1B2A;
+}
+.pro_card .p1 {
+    color:#93C5FD;
+    font-weight: 500;
+    font-size: 13px;
+}
+.pro_card .p2 {
+    color:#e0d8d8;
+    font-weight: normal;
+    font-size: 13px;
 }
 
+.pro_card ul li {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 5px 0;
+}
+.pro_card h2 {
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 44px;
+    margin: 10px 0;
+}
+
+
+
+.pro_card button{
+    color: rgb(248, 248, 247);
+    border:2px solid #2563EB;
+    margin: auto;
+    padding:10px 70px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 19px;
+    background-color: #071de6;
+}
+
+.pro_card button:hover{
+    background-color: #d7d7db;
+    color: rgb(40, 19, 160);
+}
+
+.common_card .contact_bnt{
+    border:2px solid black;
+}
+
+/* style end */
 
 /* FAQ Section Style */
 .faq-section {
@@ -332,4 +355,27 @@ font-size: 44px;
 .faq-card p {
     color: #575757;
     line-height: 1.6;
+}
+/* style end */
+
+.footer_heard{
+    background-color:#0D1B2A ;
+}
+
+.footer_container{
+    width: auto;
+    height: 60px;
+}
+
+.footer_copyright{
+    color: #bab6b6;
+    text-align: center;
+    width: auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 6px 10px;
 }
