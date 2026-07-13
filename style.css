@@ -83,10 +83,21 @@ color: rgb(237, 85, 65);
     background-image:url("./assets/banner.jpg");
     background-size: cover;
     background-position: center;
+    position: relative;
+    margin-left: 20px;
    
 
 }
-
+.black_overlay{
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    margin: auto;
+    padding: 0;
+    z-index: 1;
+}
 .banner_contant{
     color: #fff;
      display: grid;
@@ -120,9 +131,16 @@ font-size: 55px;
 /* end bannr contant style */
 
 /* start speakers style */
-.speackers_contaner{
-    width: 100%; 
+.speacker_box{
+    margin-left:50px;
+    padding: 4px 90px;
 }
+.speackers_contaner{
+     max-width: 1220px;
+     margin: auto;
+     box-sizing: border-box;
+}
+
 
 .speackers_contaner h2{
     margin: 40px 70px;
@@ -132,6 +150,9 @@ font-size: 55px;
     text-align: center;
 }
 
+
+
+
 .speakers{
     
 display: grid;
@@ -139,8 +160,9 @@ grid-template-columns: repeat(2, 1fr);
 gap: 20px;
 justify-content: center;
 flex:auto;
-padding: 20px auto;
+padding: 20px 30px;
 margin: 30px auto;
+
 }
 
 .speakers_contant{
@@ -260,11 +282,12 @@ font-weight:500;
 .pro_card{
     border: 3px solid #484747;
     border-radius: 10px;
-    padding: 20px 25px; 
+    padding: 20px 25px;
+    margin-top: 0; 
     display: flex;
     flex-direction: column; 
     width: 300px;
-    height: 360px;
+    height: 380px;
     box-shadow: 2px 3px 2px rgb(149, 147, 147);
     background-color: #0D1B2A;
 }
@@ -362,11 +385,60 @@ font-weight:500;
 
 .footer_heard{
     background-color:#0D1B2A ;
+    margin: 30px auto;
+}
+.footer_container{
+height: auto;
+width: auto;
+display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
 }
 
-.footer_container{
-    width: auto;
-    height: 60px;
+
+    
+.footer_logo{
+flex: 1;
+display: flex;
+align-items: center;
+text-align: center;
+padding: 0 10px;
+margin: auto;
+}
+
+
+
+
+/* icon style */
+.footer_socials{
+ flex: 1;
+ display: flex;
+flex-direction: column;
+align-items: flex-end;
+ margin:  10px auto;
+    padding: 5px 10px;
+ 
+}
+
+
+
+
+.footer_socials li{
+color: white;
+ list-style: none;
+ padding: 4px;
+
+}
+
+.footer_socials i{
+    color: white;
+}
+.footer_socials h3{
+    color:white;
+    font-size: 23px;
+    font-weight: 600;
+    
+
 }
 
 .footer_copyright{
@@ -380,4 +452,13 @@ font-weight:500;
     font-weight: 300;
     font-size: 14px;
     padding: 6px 10px;
+}
+
+.list_itam ul li:hover{
+   cursor: pointer; 
+   background-color: rgb(132, 130, 130);
+   border: 2px solid rgb(96, 95, 95);
+   border-radius: 8px;
+   margin: 0 auto;
+   padding: 0 6px;
 }
